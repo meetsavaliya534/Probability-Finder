@@ -1,0 +1,87 @@
+<!-- calculate probablity  -->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        p{
+            color: black;
+            background-color: #ce5a5a;
+        }
+    </style>
+<meta charset="utf-8">
+<title>Probability Finder</title>
+</head>
+<body class="body2">
+<div style="margin-top:170px;">
+<select name="Dice" id="Dice">
+    <option value="1">Dice is 1</option>
+    <option value="2">Dice is 2</option>
+    <option value="3">Dice is 3</option>
+    <option value="4">Dice is 4</option>
+    <option value="5">Dice is 5</option>
+    <option value="6">Dice is 6</option>
+    <option value="7">Dice is even</option>
+    <option value="8">Dice is odd</option>
+    <option value="9">Dice is divisible by 2</option>
+    <option value="10">Dice is divisible by 3</option>
+    <option value="11">Dice sum is less than 5</option>
+    <option value="12">Dice sum is greater than 5</option>
+</select>
+
+<button type="button" onclick="calculate()">Calculate</button>
+<button type="menu" onclick="card()">Card</button>
+<p id="result"></p>
+</div>
+<script>
+function card(){
+    window.location.href = "cardps.html";
+}
+
+function calculate(){
+
+    var Dice = document.getElementById("Dice").value;
+    var result = document.getElementById("result");
+    if(Dice == 1){
+        result.innerHTML = "The probability of drawing a 1 is 1/6 = 0.16666666666666666";
+    }
+    else if(Dice == 2){
+        result.innerHTML = "The probability of drawing a 2 is 1/6 = 0.16666666666666666";
+    }
+    else if(Dice == 3){
+        result.innerHTML = "The probability of drawing a 3 is 1/6 = 0.16666666666666666";
+    }
+    else if(Dice == 4){
+        result.innerHTML = "The probability of drawing a 4 is 1/6 = 0.16666666666666666";
+    }
+    else if(Dice == 5){
+        result.innerHTML = "The probability of drawing a 5 is 1/6 = 0.16666666666666666";
+    }
+    else if(Dice == 6){
+        result.innerHTML = "The probability of drawing a 6 is 1/6 = 0.16666666666666666";
+    }
+    else if(Dice == 7){
+        result.innerHTML = "The probability of drawing an even number is 3/6 = 0.5";
+    }
+    else if(Dice == 8){
+        result.innerHTML = "The probability of drawing an odd number is 3/6 = 0.5";
+    }
+    else if(Dice == 9){
+        result.innerHTML = "The probability of drawing a number divisible by 2 is 3/6 = 0.5";
+    }
+    else if(Dice == 10){
+        result.innerHTML = "The probability of drawing a number divisible by 3 is 2/6 = 0.3333333333333333";
+    }
+    else if(Dice == 11){
+        result.innerHTML = "The probability of drawing a number less than 5 is 4/6 = 0.6666666666666666";
+    }
+    else if(Dice == 12){
+        result.innerHTML = "The probability of drawing a number greater than 5 is 2/6 = 0.3333333333333333";
+    }
+    else{
+        result.innerHTML = "Please select a dice";
+    }
+}
+
+</script>
+</body>
+</html>

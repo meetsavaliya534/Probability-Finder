@@ -1,0 +1,125 @@
+<!-- calculate probablity  -->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        p{
+            color: #ce5a5a;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;        
+        }
+        div{
+            margin-top: 290px;
+        }
+    </style>
+<meta charset="utf-8">
+<title>Probability Finder</title>
+</head>
+<body class="body1">
+<div >
+<h1>Probability Finder</h1>
+<select name="card" id="card">
+    <option value="1">Card is Ace</option>
+    <option value="2">Card is King</option>
+    <option value="3">Card is Queen</option>
+    <option value="4">Card is Jack</option>
+    <option value="5">Card is 10</option>
+    <option value="6">Card is 9</option>
+    <option value="7">Card is 8</option>
+    <option value="8">Card is 7</option>
+    <option value="9">Card is 6</option>
+    <option value="10">Card is 5</option>
+    <option value="11">Card is 4</option>
+    <option value="12">Card is 3</option>
+    <option value="13">Card is 2</option>    
+    <option value="14">Card is club ♣</option>   
+    <option value="15">Card is diamond ♦</option>
+    <option value="16">Card is heart ♥</option>
+    <option value="17">Card is spade ♠</option>
+    <option value="18">Face Card</option>
+    <option value="19">Number Card</option>
+    <option value="20">Red Card</option>
+    <option value="21">Black Card</option> 
+</select>
+    
+<button type="button" onclick="calculate()">Calculate</button>
+<button type="menu" onclick="dice()">Dice</button>
+<p id="result"></p>
+</div>
+<script>
+function dice(){
+    window.location.href = "dice.html";
+}
+function calculate(){
+    var card = document.getElementById("card").value;
+    var result = document.getElementById("result");
+    if(card == 1){
+        result.innerHTML = "The probability of drawing an Ace is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 2){
+        result.innerHTML = "The probability of drawing a King is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 3){
+        result.innerHTML = "The probability of drawing a Queen is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 4){
+        result.innerHTML = "The probability of drawing a Jack is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 5){
+        result.innerHTML = "The probability of drawing a 10 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 6){
+        result.innerHTML = "The probability of drawing a 9 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 7){
+        result.innerHTML = "The probability of drawing a 8 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 8){
+        result.innerHTML = "The probability of drawing a 7 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 9){
+        result.innerHTML = "The probability of drawing a 6 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 10){
+        result.innerHTML = "The probability of drawing a 5 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 11){
+        result.innerHTML = "The probability of drawing a 4 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 12){
+        result.innerHTML = "The probability of drawing a 3 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 13){
+        result.innerHTML = "The probability of drawing a 2 is 4/52 or 1/13 = 0.0769230769230769";
+    }
+    else if(card == 14){
+        result.innerHTML = "The probability of drawing a club ♣ is 13/52 or 1/4 = 0.25";
+    }
+    else if(card == 15){
+        result.innerHTML = "The probability of drawing a diamond ♦ is 13/52 or 1/4 = 0.25";
+    }
+    else if(card == 16){
+        result.innerHTML = "The probability of drawing a heart ♥ is 13/52 or 1/4 = 0.25";
+    }
+    else if(card == 17){
+        result.innerHTML = "The probability of drawing a spade ♠ is 13/52 or 1/4 = 0.25";
+    }
+    else if(card == 18){
+        result.innerHTML = "The probability of drawing a face card is 12/52 or 3/13 = 0.230769230769231";
+    }
+    else if(card == 19){
+        result.innerHTML = "The probability of drawing a number card is 40/52 or 10/13 = 0.769230769230769";
+    }
+    else if(card == 20){
+        result.innerHTML = "The probability of drawing a red card is 26/52 or 1/2 = 0.5";
+    }
+    else if(card == 21){
+        result.innerHTML = "The probability of drawing a black card is 26/52 or 1/2 = 0.5";
+    }
+    else{
+        result.innerHTML = "Please select a card";
+    }
+}
+</script>
+</body>
+</html>
